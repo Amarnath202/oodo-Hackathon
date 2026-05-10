@@ -1,0 +1,11 @@
+.message { color: var(--color-text-secondary); font-size: var(--font-size-md); margin-bottom: var(--space-4); line-height: 1.6; }
+.typingField { margin-bottom: var(--space-4); }
+.typingLabel { font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2); }
+.typingInput {
+  width: 100%; border: 1.5px solid var(--color-border); border-radius: var(--radius-md);
+  padding: 10px 14px; font-size: var(--font-size-md); font-family: var(--font-sans);
+  color: var(--color-text-primary); background: var(--color-surface); outline: none;
+  transition: border-color var(--transition-fast);
+}
+.typingInput:focus { border-color: var(--color-primary); }
+.actions { display: flex; gap: var(--space-3); justify-content: flex-end; margin-top: var(--space-2); }

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-16) var(--space-8);
+  gap: var(--space-3);
+}
+.icon {
+  font-size: 3rem;
+  opacity: 0.4;
+  margin-bottom: var(--space-2);
+}
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+.description {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  max-width: 400px;
+}
+.action {
+  margin-top: var(--space-4);
+}

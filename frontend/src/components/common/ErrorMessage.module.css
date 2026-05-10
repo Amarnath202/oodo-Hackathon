@@ -1,0 +1,19 @@
+.error {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-xs);
+  color: var(--color-error);
+  margin-top: 4px;
+  animation: fadeIn 0.2s ease;
+}
+
+.icon {
+  font-style: normal;
+  flex-shrink: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

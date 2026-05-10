@@ -1,0 +1,88 @@
+.page { display: flex; flex-direction: column; gap: var(--space-5); animation: fadeIn 0.3s ease; }
+.header { display: flex; justify-content: space-between; align-items: flex-start; }
+
+.editor {
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.08);
+}
+
+.editorTextarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-md);
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background: transparent;
+  resize: none;
+  line-height: 1.6;
+}
+
+.editorTextarea::placeholder { color: var(--color-text-muted); }
+
+.editorActions { display: flex; justify-content: flex-end; gap: var(--space-2); }
+
+.notesList { display: flex; flex-direction: column; gap: var(--space-3); }
+
+.noteCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  transition: box-shadow var(--transition-fast);
+}
+
+.noteCard:hover { box-shadow: var(--shadow-md); }
+
+.noteContent {
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  line-height: 1.7;
+  white-space: pre-wrap;
+  margin-bottom: var(--space-4);
+}
+
+.noteMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.noteTime { font-size: var(--font-size-xs); color: var(--color-text-muted); }
+
+.noteStop {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 2px 10px;
+}
+
+.noteActions { margin-left: auto; display: flex; gap: var(--space-2); }
+
+.editBtn, .deleteBtn {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all var(--transition-fast);
+  color: var(--color-text-secondary);
+}
+
+.editBtn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.deleteBtn:hover { border-color: var(--color-error); color: var(--color-error); background: var(--color-error-soft); }
+
+.center { display: flex; justify-content: center; padding: var(--space-8); }

@@ -1,0 +1,112 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.required {
+  color: var(--color-error);
+  margin-left: 3px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  overflow: hidden;
+}
+
+.wrapper:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.hasError {
+  border-color: var(--color-error);
+}
+
+.hasError:focus-within {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.hasSuccess {
+  border-color: var(--color-success);
+}
+
+.hasSuccess:focus-within {
+  border-color: var(--color-success);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
+}
+
+.disabled {
+  opacity: 0.6;
+  background: var(--color-bg);
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  padding: 10px 14px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.iconLeft {
+  display: flex;
+  align-items: center;
+  padding-left: var(--space-3);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.iconRight {
+  display: flex;
+  align-items: center;
+  padding-right: var(--space-3);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.eyeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 100%;
+  transition: color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.eyeBtn:hover {
+  color: var(--color-text-secondary);
+}
+
+.hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}

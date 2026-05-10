@@ -1,0 +1,133 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0);
+  transition: background var(--transition-fast);
+}
+
+.btn:not(:disabled):hover::after {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Sizes */
+.sm {
+  font-size: var(--font-size-sm);
+  padding: 6px 12px;
+  height: 32px;
+}
+
+.md {
+  font-size: var(--font-size-sm);
+  padding: 10px 20px;
+  height: 40px;
+}
+
+.lg {
+  font-size: var(--font-size-md);
+  padding: 12px 28px;
+  height: 48px;
+}
+
+/* Variants */
+.primary {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
+}
+
+.primary:not(:disabled):hover {
+  background: var(--color-primary-light);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  transform: translateY(-1px);
+}
+
+.primary:not(:disabled):active {
+  background: var(--color-primary-dark);
+  transform: translateY(0);
+}
+
+.secondary {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.secondary:not(:disabled):hover {
+  background: #dbeafe;
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+}
+
+.ghost:not(:disabled):hover {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+.outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+
+.outline:not(:disabled):hover {
+  background: var(--color-primary-soft);
+}
+
+.danger {
+  background: var(--color-error);
+  color: #fff;
+}
+
+.danger:not(:disabled):hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.success {
+  background: var(--color-success);
+  color: #fff;
+}
+
+.success:not(:disabled):hover {
+  background: #059669;
+}
+
+/* Modifiers */
+.fullWidth {
+  width: 100%;
+}
+
+.loading {
+  cursor: wait;
+}
+
+.icon,
+.iconRight {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}

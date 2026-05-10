@@ -1,0 +1,250 @@
+// ─── Demo / Mock Data ────────────────────────────────────────────────────────
+// Used when VITE_DEMO_MODE=true so the UI works without a backend.
+
+export const DEMO_USER = {
+  id: 'demo-user-1',
+  name: 'Alex Johnson',
+  email: 'alex@traveloop.com',
+  role: 'admin',
+  photo: null,
+  createdAt: '2024-01-15T10:00:00Z',
+};
+
+export const DEMO_TRIPS = [
+  {
+    id: 'trip-1',
+    name: 'Summer Europe Adventure',
+    description: 'Exploring the best of Western Europe — Paris, Rome, Barcelona and more.',
+    startDate: '2025-07-01',
+    endDate: '2025-07-21',
+    coverUrl: null,
+    totalBudget: 398400,
+    stopCount: 5,
+    activityCount: 18,
+    budgetLimit: 415000,
+    createdAt: '2025-05-01T10:00:00Z',
+  },
+  {
+    id: 'trip-2',
+    name: 'Japan Cherry Blossom Tour',
+    description: 'A magical journey through Japan during sakura season.',
+    startDate: '2025-04-01',
+    endDate: '2025-04-14',
+    coverUrl: null,
+    totalBudget: 265600,
+    stopCount: 4,
+    activityCount: 12,
+    budgetLimit: 290500,
+    createdAt: '2025-02-20T10:00:00Z',
+  },
+  {
+    id: 'trip-3',
+    name: 'Southeast Asia Backpack',
+    description: 'Thailand, Vietnam, Cambodia — the ultimate backpacker route.',
+    startDate: '2025-09-10',
+    endDate: '2025-10-05',
+    coverUrl: null,
+    totalBudget: 174300,
+    stopCount: 6,
+    activityCount: 22,
+    budgetLimit: 207500,
+    createdAt: '2025-04-10T10:00:00Z',
+  },
+  {
+    id: 'trip-4',
+    name: 'New York City Weekend',
+    description: 'The city that never sleeps — a 4-day blitz through NYC.',
+    startDate: '2025-11-07',
+    endDate: '2025-11-10',
+    coverUrl: null,
+    totalBudget: 116200,
+    stopCount: 1,
+    activityCount: 8,
+    budgetLimit: 124500,
+    createdAt: '2025-05-05T10:00:00Z',
+  },
+  {
+    id: 'trip-5',
+    name: 'Maldives Honeymoon',
+    description: 'Crystal blue waters, overwater bungalows, and perfect sunsets.',
+    startDate: '2025-12-20',
+    endDate: '2025-12-30',
+    coverUrl: null,
+    totalBudget: 539500,
+    stopCount: 2,
+    activityCount: 6,
+    budgetLimit: 581000,
+    createdAt: '2025-04-28T10:00:00Z',
+  },
+  {
+    id: 'trip-6',
+    name: 'Patagonia Hiking Trek',
+    description: 'Torres del Paine and the end of the world — an epic adventure.',
+    startDate: '2026-01-15',
+    endDate: '2026-01-28',
+    coverUrl: null,
+    totalBudget: 232400,
+    stopCount: 3,
+    activityCount: 10,
+    budgetLimit: 249000,
+    createdAt: '2025-05-08T10:00:00Z',
+  },
+];
+
+export const DEMO_STOPS = [
+  { id: 'stop-1', tripId: 'trip-1', cityName: 'Paris', country: 'France', startDate: '2025-07-01', endDate: '2025-07-05', order: 1 },
+  { id: 'stop-2', tripId: 'trip-1', cityName: 'Rome', country: 'Italy', startDate: '2025-07-05', endDate: '2025-07-09', order: 2 },
+  { id: 'stop-3', tripId: 'trip-1', cityName: 'Barcelona', country: 'Spain', startDate: '2025-07-09', endDate: '2025-07-13', order: 3 },
+  { id: 'stop-4', tripId: 'trip-1', cityName: 'Amsterdam', country: 'Netherlands', startDate: '2025-07-13', endDate: '2025-07-17', order: 4 },
+  { id: 'stop-5', tripId: 'trip-1', cityName: 'Prague', country: 'Czech Republic', startDate: '2025-07-17', endDate: '2025-07-21', order: 5 },
+];
+
+export const DEMO_ACTIVITIES = [
+  { id: 'act-1', stopId: 'stop-1', name: 'Eiffel Tower Visit', type: 'Sightseeing', cost: 2324, duration: 3, time: '10:00', description: 'Climb the iconic iron tower for breathtaking views of Paris.' },
+  { id: 'act-2', stopId: 'stop-1', name: 'Louvre Museum', type: 'Culture', cost: 1411, duration: 4, time: '14:00', description: 'Home to the Mona Lisa and thousands of world-class artworks.' },
+  { id: 'act-3', stopId: 'stop-1', name: 'Seine River Cruise', type: 'Sightseeing', cost: 1245, duration: 1.5, time: '19:00', description: 'Romantic evening cruise along the Seine.' },
+  { id: 'act-4', stopId: 'stop-2', name: 'Colosseum Tour', type: 'Culture', cost: 1826, duration: 3, time: '09:00', description: 'Walk through the ancient amphitheatre of the Roman Empire.' },
+  { id: 'act-5', stopId: 'stop-2', name: 'Vatican Museums', type: 'Culture', cost: 1411, duration: 4, time: '13:00', description: 'See the Sistine Chapel and incredible Renaissance art.' },
+  { id: 'act-6', stopId: 'stop-2', name: 'Trastevere Food Tour', type: 'Food & Dining', cost: 3735, duration: 2.5, time: '18:30', description: 'Taste authentic Roman pasta, pizza and gelato.' },
+  { id: 'act-7', stopId: 'stop-3', name: 'Sagrada Família', type: 'Sightseeing', cost: 2158, duration: 2, time: '10:00', description: "Gaudí's masterpiece — a UNESCO World Heritage site." },
+  { id: 'act-8', stopId: 'stop-3', name: 'La Boqueria Market', type: 'Food & Dining', cost: 0, duration: 1.5, time: '12:00', description: 'Vibrant market with fresh produce, tapas and local delicacies.' },
+];
+
+export const DEMO_BUDGET = {
+  tripId: 'trip-1',
+  limit: 415000,
+  breakdown: {
+    transport: 78850,
+    stay: 149400,
+    activities: 51460,
+    meals: 73040,
+    shopping: 28220,
+    miscellaneous: 17430,
+  },
+  dailyCosts: [
+    { date: 'Jul 1', amount: 26560 },
+    { date: 'Jul 2', amount: 14940 },
+    { date: 'Jul 3', amount: 24070 },
+    { date: 'Jul 4', amount: 34030 },
+    { date: 'Jul 5', amount: 12450 },
+    { date: 'Jul 6', amount: 23240 },
+    { date: 'Jul 7', amount: 28220 },
+    { date: 'Jul 8', amount: 18260 },
+    { date: 'Jul 9', amount: 16185 },
+    { date: 'Jul 10', amount: 30710 },
+  ],
+  daysCount: 20,
+};
+
+export const DEMO_CHECKLIST = [
+  { id: 'cl-1', name: 'Passport', category: 'Documents', packed: true },
+  { id: 'cl-2', name: 'Travel Insurance', category: 'Documents', packed: true },
+  { id: 'cl-3', name: 'Flight Tickets (printed)', category: 'Documents', packed: false },
+  { id: 'cl-4', name: 'Hotel Bookings', category: 'Documents', packed: true },
+  { id: 'cl-5', name: 'T-Shirts (5)', category: 'Clothing', packed: false },
+  { id: 'cl-6', name: 'Jeans (2)', category: 'Clothing', packed: false },
+  { id: 'cl-7', name: 'Jacket', category: 'Clothing', packed: true },
+  { id: 'cl-8', name: 'Comfortable Shoes', category: 'Clothing', packed: false },
+  { id: 'cl-9', name: 'Phone Charger', category: 'Electronics', packed: true },
+  { id: 'cl-10', name: 'Power Bank', category: 'Electronics', packed: true },
+  { id: 'cl-11', name: 'Camera', category: 'Electronics', packed: false },
+  { id: 'cl-12', name: 'Universal Adapter', category: 'Electronics', packed: false },
+  { id: 'cl-13', name: 'Sunscreen', category: 'Toiletries', packed: false },
+  { id: 'cl-14', name: 'Toothbrush & Paste', category: 'Toiletries', packed: true },
+  { id: 'cl-15', name: 'Paracetamol', category: 'Medications', packed: false },
+  { id: 'cl-16', name: 'Euros (€500)', category: 'Money', packed: false },
+];
+
+export const DEMO_NOTES = [
+  {
+    id: 'note-1',
+    content: 'Check-in at Hotel Le Marais in Paris is at 15:00. Room 412. WiFi: LeMarais2025',
+    stopName: 'Paris',
+    createdAt: '2025-05-10T08:30:00Z',
+    updatedAt: '2025-05-10T08:30:00Z',
+  },
+  {
+    id: 'note-2',
+    content: 'Book the skip-the-line Colosseum tickets BEFORE arriving in Rome. Use the official website only — third party sellers are scammers.',
+    stopName: 'Rome',
+    createdAt: '2025-05-09T14:20:00Z',
+    updatedAt: '2025-05-09T14:20:00Z',
+  },
+  {
+    id: 'note-3',
+    content: 'Emergency contact in Spain: Maria García +34 612 345 678. She is a local guide and family friend.',
+    stopName: 'Barcelona',
+    createdAt: '2025-05-08T09:00:00Z',
+    updatedAt: '2025-05-08T09:00:00Z',
+  },
+  {
+    id: 'note-4',
+    content: 'Visa for Schengen confirmed. Valid from June 25 to August 5. Don\'t forget to carry physical copy.',
+    stopName: null,
+    createdAt: '2025-05-07T16:45:00Z',
+    updatedAt: '2025-05-07T16:45:00Z',
+  },
+];
+
+export const DEMO_CITIES = [
+  { id: 'city-1', name: 'Paris', country: 'France', region: 'Europe', costIndex: 8, popularityScore: 9.8, description: 'The City of Light — romance, cuisine, and world-class art.' },
+  { id: 'city-2', name: 'Tokyo', country: 'Japan', region: 'Asia', costIndex: 7, popularityScore: 9.6, description: 'A seamless blend of ultramodern and traditional.' },
+  { id: 'city-3', name: 'New York', country: 'USA', region: 'North America', costIndex: 9, popularityScore: 9.5, description: 'The city that never sleeps — culture, food, and finance.' },
+  { id: 'city-4', name: 'Barcelona', country: 'Spain', region: 'Europe', costIndex: 7, popularityScore: 9.3, description: 'Gaudí architecture, beaches, and incredible tapas.' },
+  { id: 'city-5', name: 'Rome', country: 'Italy', region: 'Europe', costIndex: 7, popularityScore: 9.2, description: 'An open-air museum — the Eternal City.' },
+  { id: 'city-6', name: 'Bangkok', country: 'Thailand', region: 'Asia', costIndex: 3, popularityScore: 9.0, description: 'Street food paradise with ornate temples and nightlife.' },
+  { id: 'city-7', name: 'Amsterdam', country: 'Netherlands', region: 'Europe', costIndex: 8, popularityScore: 8.9, description: 'Canals, cycling, and world-class museums.' },
+  { id: 'city-8', name: 'Bali', country: 'Indonesia', region: 'Asia', costIndex: 3, popularityScore: 8.8, description: 'Spiritual island paradise with rice terraces and surf.' },
+  { id: 'city-9', name: 'Lisbon', country: 'Portugal', region: 'Europe', costIndex: 5, popularityScore: 8.7, description: 'Hilly coastal city with stunning viewpoints and fado music.' },
+  { id: 'city-10', name: 'Dubai', country: 'UAE', region: 'Middle East', costIndex: 9, popularityScore: 8.7, description: 'Futuristic skyline, luxury malls, and desert adventures.' },
+  { id: 'city-11', name: 'Cape Town', country: 'South Africa', region: 'Africa', costIndex: 4, popularityScore: 8.6, description: 'Table Mountain, vineyards, and stunning coastlines.' },
+  { id: 'city-12', name: 'Sydney', country: 'Australia', region: 'Oceania', costIndex: 8, popularityScore: 8.5, description: 'Opera House, Bondi Beach, and the Blue Mountains.' },
+];
+
+export const DEMO_ALL_ACTIVITIES = [
+  { id: 'a-1', name: 'Eiffel Tower Visit', type: 'Sightseeing', cost: 28, duration: 3, city: { name: 'Paris' }, description: 'Iconic iron tower with panoramic city views.' },
+  { id: 'a-2', name: 'Sushi Making Class', type: 'Food & Dining', cost: 65, duration: 2.5, city: { name: 'Tokyo' }, description: 'Learn to make authentic sushi from a master chef.' },
+  { id: 'a-3', name: 'Colosseum Tour', type: 'Culture', cost: 22, duration: 3, city: { name: 'Rome' }, description: 'Ancient amphitheatre of the Roman Empire.' },
+  { id: 'a-4', name: 'Sagrada Família', type: 'Sightseeing', cost: 26, duration: 2, city: { name: 'Barcelona' }, description: "Gaudí's unfinished masterpiece." },
+  { id: 'a-5', name: 'Canal Boat Tour', type: 'Sightseeing', cost: 18, duration: 1.5, city: { name: 'Amsterdam' }, description: 'Float through 17th-century canals.' },
+  { id: 'a-6', name: 'Thai Cooking Class', type: 'Food & Dining', cost: 40, duration: 3, city: { name: 'Bangkok' }, description: 'Master pad thai, green curry, and more.' },
+  { id: 'a-7', name: 'Surfing Lesson', type: 'Adventure', cost: 35, duration: 2, city: { name: 'Bali' }, description: 'Catch your first wave at Kuta Beach.' },
+  { id: 'a-8', name: 'Central Park Jog', type: 'Sports', cost: 0, duration: 1, city: { name: 'New York' }, description: 'Morning run through 843 acres of green.' },
+  { id: 'a-9', name: 'Table Mountain Hike', type: 'Nature', cost: 12, duration: 4, city: { name: 'Cape Town' }, description: 'Stunning views from 1,086m above sea level.' },
+  { id: 'a-10', name: 'Desert Safari', type: 'Adventure', cost: 80, duration: 5, city: { name: 'Dubai' }, description: 'Dune bashing, camel rides, and Bedouin dinner.' },
+  { id: 'a-11', name: 'Tram 28 Ride', type: 'Sightseeing', cost: 3, duration: 1, city: { name: 'Lisbon' }, description: 'Historic tram through Alfama district.' },
+  { id: 'a-12', name: 'Sydney Opera House Tour', type: 'Culture', cost: 45, duration: 1.5, city: { name: 'Sydney' }, description: 'Go behind the scenes of an architectural icon.' },
+];
+
+export const DEMO_ADMIN_STATS = {
+  totalUsers: 12480,
+  totalTrips: 34721,
+  totalCities: 248,
+  activeToday: 892,
+  topCities: [
+    { name: 'Paris', count: 3210 },
+    { name: 'Tokyo', count: 2890 },
+    { name: 'Barcelona', count: 2540 },
+    { name: 'New York', count: 2100 },
+    { name: 'Rome', count: 1980 },
+    { name: 'Bali', count: 1750 },
+  ],
+  topActivities: [
+    { name: 'Eiffel Tower Visit', count: 1820 },
+    { name: 'Colosseum Tour', count: 1540 },
+    { name: 'Sagrada Família', count: 1390 },
+    { name: 'Canal Boat Tour', count: 1210 },
+    { name: 'Desert Safari', count: 980 },
+  ],
+};
+
+export const DEMO_ADMIN_USERS = [
+  { id: 'u-1', name: 'Alex Johnson', email: 'alex@traveloop.com', role: 'admin', createdAt: '2024-01-15T10:00:00Z', banned: false },
+  { id: 'u-2', name: 'Sofia Martinez', email: 'sofia@gmail.com', role: 'user', createdAt: '2024-02-10T12:30:00Z', banned: false },
+  { id: 'u-3', name: 'Rahul Sharma', email: 'rahul.sharma@yahoo.com', role: 'user', createdAt: '2024-03-05T09:15:00Z', banned: false },
+  { id: 'u-4', name: 'Emily Chen', email: 'emily.chen@outlook.com', role: 'user', createdAt: '2024-03-20T14:00:00Z', banned: false },
+  { id: 'u-5', name: 'James Wilson', email: 'james@proton.me', role: 'user', createdAt: '2024-04-01T08:45:00Z', banned: true },
+  { id: 'u-6', name: 'Aisha Patel', email: 'aisha.p@gmail.com', role: 'user', createdAt: '2024-04-12T11:20:00Z', banned: false },
+  { id: 'u-7', name: 'Lucas Müller', email: 'lucas.m@web.de', role: 'user', createdAt: '2024-05-03T16:10:00Z', banned: false },
+  { id: 'u-8', name: 'Priya Nair', email: 'priya.nair@gmail.com', role: 'user', createdAt: '2024-05-18T10:00:00Z', banned: false },
+];
